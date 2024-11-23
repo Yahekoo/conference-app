@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-icons.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="full-section home-section1">
+        <nav class="navbar fixed-top ">
+            <div class="container d-flex justify-content-between align-items-center">
+              <!-- Left Items -->
+              <div class="d-flex me-auto">
+                <a class="nav-link me-3" href="#">Left 1</a>
+                <a class="nav-link me-3" href="#">Left 2</a>
+                <a class="nav-link" href="#">Left 3</a>
+              </div>
+          
+              <!-- Logo Centered -->
+              <a class="navbar-brand mx-3" href="#">
+                <img src="imgs/img1.png" alt="Bootstrap" width="auto" height="34">
+              </a>
+          
+              <!-- Right Items -->
+              <div class="d-flex ms-auto">
+                <a class="nav-link me-3" href="#">Right 1</a>
+                <a class="nav-link me-3" href="#">Right 2</a>
+                <a class="nav-link" href="#">Right 3</a>
+              </div>
+            </div>
+          </nav>
+
+          <!-- Centered Content -->
+    <div class="text-center">
+        <!-- Title with Typing Effect -->
+        <div class="typed-title">
+            <span id="typed"></span>
+          </div>
+        <p>on 01 November – 04 November 2023, at the ENS of Fez, Morocco</p>  
+  
+        <!-- Buttons -->
+        <div class="action-buttons">
+          <button class="btn btn-primary">Get Started</button>
+          <button class="btn btn-secondary">Learn More</button>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="home-section2">
+      <div class="float-slogan">
+        <i class="bi bi-quote"></i>
+        <p>Mathematics knows no races or geographic boundaries; for mathematics, the cultural world is one country.</p>
+        <span>- Hassan Zafin</span>
+      </div>
+      <div class="row gx-0 d-flex"  style="width: 100%;">
+        <div class="col square" style="background-color: red;">
+          <img src="imgs/img3.jpg" />
+        </div>
+        <div class="col square" style="background-color: green;">
+          <img src="imgs/img5.jpg" />
+        </div>
+        <div class="col square" style="background-color: blue;">
+          <img src="imgs/img6.jpg" />
+        </div>
+      </div>      
+    </section>
+    
+      
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      // Initialize Typed.js
+      new Typed('#typed', {
+        strings: [
+          'International Conference on Mathematical Modelization',
+          'Control and Related Fields (ICMM CR2023)',
+          'Coming Soon...'
+        ],
+        typeSpeed: 40,      // Speed of typing
+        backSpeed: 30,      // Speed of backspacing
+        backDelay: 2000,    // Delay before typing the next string
+        startDelay: 500,    // Initial delay before typing starts
+        loop: true          // Loop through the strings
+      });
+    </script>
+
+    <script src="main.js"></script>
+      
+
+</body>
+</html>

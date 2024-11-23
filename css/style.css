@@ -1,0 +1,147 @@
+body {
+  background-color: #373737 !important;
+}
+
+.home-section1 {
+  background:  linear-gradient(45deg,
+  rgba(245, 70, 66, 0.75),
+  rgba(8, 83, 156, 0.75)), 
+                url('../imgs/img2.jpg') no-repeat center center fixed;
+    background-size: cover; /* Ensure the image covers the screen */
+    margin: 0;
+    background-size: cover;
+    color: white;
+    flex-direction: column;
+    position: relative;
+    padding: 0;
+    filter: brightness(1.2) saturate(1.2) contrast(2.5) grayscale(1);
+  }
+  .home-section2 {
+    position: relative;
+    height: max-content; 
+    color : #373737;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-section2 .float-slogan {
+    position: absolute;
+    width: 70%;
+    padding: 1rem;
+    background-color: #373737;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    min-height: 6rem;
+    top: -3rem;
+    z-index: 9;
+    border-radius: .8rem;
+
+  }
+  .float-slogan > i {
+    position: absolute;
+    top: -4.2rem;
+    left: 50% -80px;
+    right: 50%;
+    color: #373737;
+    width: 1rem;
+    height: 1rem;
+    font-size: 5rem;
+    text-shadow: 0 0 5px rgb(255, 255, 255); /* Creates a border effect following the visible content */
+    
+  }
+  .float-slogan > p {
+
+      margin: 1.3rem 1rem 1rem 1rem;
+      font-weight: bold;
+      font-style: oblique;
+  }
+  .float-slogan > span {
+    margin: 1rem;
+}
+
+  .full-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+    /* Ensure content is above the overlay */
+    .content {
+      position: relative;
+      z-index: 2;
+      color: white;
+    }
+
+    /* Navbar styling */
+    .navbar {
+      background: rgba(255, 255, 255, 0.1);  /* Transparent background */
+      position: relative;
+      z-index: 3; /* Above the gradient */
+      position: fixed; /* Ensures it stays fixed at the top */
+      top: 0;
+      width: 100%;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.304);
+      backdrop-filter: blur(10px); /* Blur the background behind */
+    }
+    /* Blur Effect */
+    .navbar-blur {
+      background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+      backdrop-filter: blur(10px); /* Blur the background behind */
+      filter: blur(5px); /* Fallback blur for older browsers */
+    }
+    .navbar .nav-link, .navbar-brand {
+      color: white !important; /* White text for links */
+    }
+    .navbar .nav-link:hover {
+      text-decoration: underline; /* Optional hover effect */
+    }
+
+    .typed-title {
+        font-size: 3rem;
+        font-weight: bold;
+      }
+  
+      /* Button Styling */
+      .action-buttons {
+        margin-top: 20px;
+      }
+      .action-buttons .btn {
+        margin: 0 10px;
+      }
+
+   
+      .square {
+        height: 100%;
+        aspect-ratio: 1; /* Ensures the height is equal to the width */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        overflow: hidden;
+      }
+
+      .square > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(1.2) saturate(1.2) grayscale(1) contrast(1);
+        z-index: 1;
+        cursor: pointer;
+        transition: all ease-out .2s;
+      }
+
+      .square:hover > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(1.2) saturate(1.2) grayscale(0.9) contrast(0.9) blur(4.6px);
+        z-index: 1;
+        cursor: pointer;
+        transform: scaleX(1.1) scaleY(1.1);
+        transition: all ease-in-out .3s;
+      }
