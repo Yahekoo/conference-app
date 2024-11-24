@@ -10,7 +10,7 @@
 </head>
 <body>
     <section class="full-section home-section1">
-        <nav class="navbar fixed-top ">
+        <nav class="navbar fixed-top">
             <div class="container d-flex justify-content-between align-items-center">
               <!-- Left Items -->
               <div class="d-flex me-auto">
@@ -68,27 +68,37 @@
         </div>
       </div>      
     </section>
+
+    <section class="home-section3">
+      <h1 class="section-title">Compte à rebours</h1>
+      <div class="row text-center">
+        <div class="col m-3">
+            <h3 id="days" class="display-1">00</h3>
+            <p>Days</p>
+        </div>
+        <div class="col m-3">
+            <h3 id="hours" class="display-1">00</h3>
+            <p>Hours</p>
+        </div>
+        <div class="col m-3">
+            <h3 id="minutes" class="display-1">00</h3>
+            <p>Minutes</p>
+        </div>
+        <div class="col m-3">
+            <h3 id="seconds" class="display-1">00</h3>
+            <p>Seconds</p>
+        </div>
+    </div>
+  </section>
+
+   
     
       
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-      // Initialize Typed.js
-      new Typed('#typed', {
-        strings: [
-          'International Conference on Mathematical Modelization',
-          'Control and Related Fields (ICMM CR2023)',
-          'Coming Soon...'
-        ],
-        typeSpeed: 40,      // Speed of typing
-        backSpeed: 30,      // Speed of backspacing
-        backDelay: 2000,    // Delay before typing the next string
-        startDelay: 500,    // Initial delay before typing starts
-        loop: true          // Loop through the strings
-      });
-    </script>
+  
 
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
       
 
 </body>
